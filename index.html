@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>From Demeter to Metrulas — A Name History</title>
+<meta name="description" content="How a single Greek surname carries a 2,500-year line: from an ancient goddess and a soldier-saint, through Byzantine Mystras and the Ottoman Morea, to one of the great migrations of the modern age." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..700&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --ink:#1c1b18;
+    --ink-soft:#46443e;
+    --paper:#f6f1e7;
+    --paper-deep:#efe7d6;
+    --aegean:#163b54;
+    --aegean-deep:#0f2c41;
+    --ochre:#b5651d;
+    --terracotta:#a8400f;
+    --gold:#c2a14a;
+    --line:#d8cdb6;
+    --max:760px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Spectral",Georgia,serif;
+    font-size:20px;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  ::selection{background:var(--gold);color:#1c1b18;}
+
+  /* ---------- Reading progress ---------- */
+  #progress{
+    position:fixed;top:0;left:0;height:4px;width:0%;
+    background:linear-gradient(90deg,var(--ochre),var(--gold));
+    z-index:200;transition:width .12s linear;
+  }
+
+  /* ---------- Layout helpers ---------- */
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 26px;}
+  section{position:relative;}
+  .kicker{
+    font-family:"Inter",sans-serif;font-weight:600;font-size:.72rem;
+    letter-spacing:.22em;text-transform:uppercase;color:var(--ochre);
+    margin:0 0 .8em;display:inline-block;
+  }
+  h2{
+    font-family:"Fraunces",serif;font-weight:600;font-size:clamp(2rem,5vw,3.1rem);
+    line-height:1.05;letter-spacing:-.01em;margin:.1em 0 .7em;color:var(--ink);
+  }
+  h3{font-family:"Fraunces",serif;font-weight:600;font-size:1.4rem;margin:1.8em 0 .4em;}
+  p{margin:0 0 1.2em;}
+  a{color:var(--terracotta);text-decoration:none;border-bottom:1px solid rgba(168,64,15,.3);}
+  a:hover{border-color:var(--terracotta);}
+  sup a{font-family:"Inter",sans-serif;font-size:.62em;font-weight:600;border:none;padding:0 1px;}
+
+  /* ---------- Hero ---------- */
+  .hero{
+    min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;
+    text-align:center;color:#f4ede0;position:relative;overflow:hidden;
+    background:radial-gradient(120% 90% at 50% 0%,#1d4866 0%,#123247 45%,#0c2235 100%);
+  }
+  .hero canvas{position:absolute;inset:0;width:100%;height:100%;opacity:.5;}
+  .hero .meander-top{position:absolute;top:0;left:0;width:100%;height:34px;opacity:.5;}
+  .hero-inner{position:relative;z-index:3;padding:40px 26px;max-width:920px;}
+  .hero .eyebrow{
+    font-family:"Inter",sans-serif;font-weight:600;font-size:.74rem;letter-spacing:.34em;
+    text-transform:uppercase;color:var(--gold);margin-bottom:1.6rem;
+  }
+  .hero h1{
+    font-family:"Fraunces",serif;font-weight:600;font-size:clamp(3rem,11vw,7rem);
+    line-height:.96;letter-spacing:-.02em;margin:0;
+    text-shadow:0 2px 40px rgba(0,0,0,.35);
+  }
+  .hero h1 .from,.hero h1 .to{display:block;}
+  .hero h1 em{font-style:italic;font-weight:300;color:var(--gold);}
+  .hero .dek{
+    font-family:"Spectral",serif;font-weight:300;font-size:clamp(1.05rem,2.4vw,1.4rem);
+    line-height:1.55;max-width:640px;margin:1.8rem auto 0;color:#e7ddca;
+  }
+  .scrollcue{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);z-index:3;
+    font-family:"Inter",sans-serif;font-size:.66rem;letter-spacing:.28em;text-transform:uppercase;
+    color:#cdbfa3;display:flex;flex-direction:column;align-items:center;gap:10px;animation:bob 2.4s ease-in-out infinite;}
+  .scrollcue span{width:1px;height:34px;background:linear-gradient(var(--gold),transparent);}
+  @keyframes bob{0%,100%{transform:translateX(-50%) translateY(0);}50%{transform:translateX(-50%) translateY(8px);}}
+
+  /* ---------- Standfirst ---------- */
+  .standfirst{padding:90px 0 30px;}
+  .standfirst .lead{font-size:1.35rem;line-height:1.6;color:var(--ink);}
+  .dropcap::first-letter{
+    font-family:"Fraunces",serif;font-weight:600;float:left;font-size:4.6rem;line-height:.72;
+    padding:.06em .12em 0 0;color:var(--terracotta);
+  }
+
+  /* ---------- Generic content blocks ---------- */
+  .block{padding:60px 0;}
+  .block.tint{background:var(--paper-deep);}
+  .block.dark{background:var(--aegean);color:#ede4d2;}
+  .block.dark h2{color:#fff;}
+  .block.dark .kicker{color:var(--gold);}
+  .block.dark a{color:var(--gold);border-color:rgba(194,161,74,.4);}
+
+  /* reveal animation */
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease;}
+  .reveal.in{opacity:1;transform:none;}
+
+  /* pull quote */
+  .pull{
+    border-left:3px solid var(--ochre);padding:.2em 0 .2em 1.1em;margin:1.8em 0;
+    font-family:"Fraunces",serif;font-style:italic;font-weight:400;font-size:1.6rem;line-height:1.3;color:var(--aegean);
+  }
+  .block.dark .pull{color:#fff;border-color:var(--gold);}
+
+  /* meander divider */
+  .divider{display:flex;justify-content:center;padding:24px 0;}
+  .divider svg{width:200px;height:22px;opacity:.5;}
+
+  /* ---------- Figure / caption ---------- */
+  figure{margin:2.2em 0;}
+  figcaption{font-family:"Inter",sans-serif;font-size:.82rem;color:var(--ink-soft);
+    margin-top:.7em;line-height:1.5;text-align:center;}
+  .wide{max-width:1080px;}
+
+  /* ---------- Timeline ---------- */
+  .timeline-wrap{max-width:900px;margin:0 auto;padding:10px 26px;}
+  .tl{position:relative;margin:30px 0 10px;padding-left:34px;}
+  .tl::before{content:"";position:absolute;left:9px;top:6px;bottom:6px;width:2px;
+    background:linear-gradient(var(--gold),var(--ochre),var(--terracotta));}
+  .tl-item{position:relative;padding:0 0 30px 8px;}
+  .tl-item::before{content:"";position:absolute;left:-30px;top:6px;width:14px;height:14px;border-radius:50%;
+    background:var(--paper);border:3px solid var(--ochre);}
+  .tl-item.era::before{background:var(--ochre);}
+  .tl-date{font-family:"Inter",sans-serif;font-weight:700;font-size:.82rem;letter-spacing:.05em;
+    color:var(--terracotta);text-transform:uppercase;}
+  .block.dark .tl-date{color:var(--gold);}
+  .tl-title{font-family:"Fraunces",serif;font-weight:600;font-size:1.18rem;margin:.1em 0 .2em;}
+  .tl-body{font-size:.98rem;line-height:1.6;color:inherit;opacity:.9;}
+
+  /* ---------- Stat counters ---------- */
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:34px auto;max-width:900px;}
+  .stat{background:rgba(255,255,255,.06);border:1px solid rgba(194,161,74,.3);border-radius:10px;
+    padding:24px 16px;text-align:center;}
+  .block:not(.dark) .stat{background:#fff;border-color:var(--line);box-shadow:0 6px 20px rgba(28,27,24,.05);}
+  .stat .num{font-family:"Fraunces",serif;font-weight:700;font-size:clamp(1.8rem,5vw,2.8rem);
+    line-height:1;color:var(--terracotta);}
+  .block.dark .stat .num{color:var(--gold);}
+  .stat .lab{font-family:"Inter",sans-serif;font-size:.78rem;line-height:1.4;margin-top:.6em;color:var(--ink-soft);}
+  .block.dark .stat .lab{color:#cfc4ad;}
+
+  /* ---------- Map ---------- */
+  .mapfig svg{width:100%;height:auto;display:block;}
+  .journey-path{stroke-dasharray:6 6;animation:dash 30s linear infinite;}
+  @keyframes dash{to{stroke-dashoffset:-240;}}
+  .map-card{background:#fbf7ee;border:1px solid var(--line);border-radius:12px;padding:18px;
+    box-shadow:0 10px 30px rgba(28,27,24,.07);}
+
+  /* ---------- Famous names cards ---------- */
+  .names{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:30px 0;}
+  .ncard{background:#fff;border:1px solid var(--line);border-radius:10px;padding:20px 22px;}
+  .ncard h4{font-family:"Fraunces",serif;font-size:1.12rem;margin:0 0 .2em;}
+  .ncard .who{font-family:"Inter",sans-serif;font-size:.78rem;color:var(--ink-soft);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.7em;}
+  .ncard p{font-size:.95rem;line-height:1.55;margin:0;}
+  .verdict{display:inline-block;font-family:"Inter",sans-serif;font-size:.72rem;font-weight:600;
+    padding:3px 9px;border-radius:20px;margin-top:.8em;letter-spacing:.04em;}
+  .v-diff{background:#f3e2d6;color:#a8400f;}
+  .v-maybe{background:#eee7cf;color:#8a6d12;}
+
+  /* root comparison */
+  .roots{display:grid;grid-template-columns:1fr 1fr;gap:0;margin:26px 0;border:1px solid var(--line);border-radius:12px;overflow:hidden;}
+  .root{padding:22px 20px;}
+  .root:first-child{background:#f0ead9;border-right:1px solid var(--line);}
+  .root:last-child{background:#eef0ef;}
+  .root .tag{font-family:"Inter",sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ochre);}
+  .root .gk{font-family:"Fraunces",serif;font-size:1.6rem;margin:.2em 0;}
+  .root .mean{font-size:.95rem;color:var(--ink-soft);}
+
+  /* ---------- Sources ---------- */
+  .sources{padding:60px 0 90px;background:var(--aegean-deep);color:#cdc2ac;}
+  .sources h2{color:#fff;}
+  .sources .kicker{color:var(--gold);}
+  .sources ol{font-family:"Inter",sans-serif;font-size:.82rem;line-height:1.7;padding-left:1.4em;}
+  .sources li{margin-bottom:.5em;}
+  .sources a{color:var(--gold);border-color:rgba(194,161,74,.35);word-break:break-word;}
+  .note{font-style:italic;color:#bdb29a;font-size:1rem;border-left:2px solid var(--gold);padding-left:1em;margin:1.4em 0 2em;}
+
+  footer{background:#0a1a26;color:#7f8d96;text-align:center;padding:34px 20px;
+    font-family:"Inter",sans-serif;font-size:.78rem;letter-spacing:.04em;}
+  footer .meander{width:160px;height:18px;opacity:.4;margin-bottom:14px;}
+
+  @media(max-width:680px){
+    body{font-size:18px;}
+    .names,.stats,.roots{grid-template-columns:1fr;}
+    .roots .root:first-child{border-right:none;border-bottom:1px solid var(--line);}
+    .pull{font-size:1.3rem;}
+    .standfirst .lead{font-size:1.18rem;}
+  }
+</style>
+</head>
+<body>
+<div id="progress"></div>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <canvas id="stars"></canvas>
+  <svg class="meander-top" viewBox="0 0 1200 40" preserveAspectRatio="none" aria-hidden="true">
+    <pattern id="mtop" width="60" height="40" patternUnits="userSpaceOnUse">
+      <path d="M0 30 H20 V10 H40 V30 H50 M10 30 V20 H30 V40" fill="none" stroke="#c2a14a" stroke-width="3"/>
+    </pattern>
+    <rect width="1200" height="40" fill="url(#mtop)"/>
+  </svg>
+  <div class="hero-inner">
+    <div class="eyebrow">A Name History &nbsp;·&nbsp; Etymology, Migration &amp; Scale</div>
+    <h1><span class="from">From <em>Demeter</em></span><span class="to">to Metrulas</span></h1>
+    <p class="dek">How a single Greek surname carries a 2,500-year line — from an ancient goddess and a soldier-saint, through Byzantine Mystras and the Ottoman Morea, to one of the great migrations of the modern age.</p>
+  </div>
+  <div class="scrollcue">Scroll<span></span></div>
+</header>
+
+<!-- ============ STANDFIRST ============ -->
+<section class="standfirst">
+  <div class="wrap">
+    <p class="lead dropcap reveal">The surname <strong>Metrulas</strong> is a streamlined American form of the Greek name <strong>Demetropoulos</strong>. It is an ordinary-looking word that turns out to be a compressed history. Read closely, it contains the name of a goddess, the memory of a martyr, the fingerprint of a single Greek region, and the echo of an economic collapse that emptied that region toward America.</p>
+    <p class="reveal">This report follows the name along that path — and fills in the long centuries between, when a peninsula in southern Greece held the last light of an empire, slipped under foreign rule, and finally launched its people across an ocean. Then it asks two plain questions: how common was the name really, and how likely is any connection to the famous people who carry names that sound almost the same?</p>
+  </div>
+  <div class="divider"><svg viewBox="0 0 200 22" aria-hidden="true"><path d="M5 16 H25 V6 H45 V16 H65 V6 H85 V16 H105 V6 H125 V16 H145 V6 H165 V16 H185" fill="none" stroke="#b5651d" stroke-width="2.4"/></svg></div>
+</section>
+
+<!-- ============ ANCIENT ROOT ============ -->
+<section class="block tint">
+  <div class="wrap reveal">
+    <span class="kicker">The Ancient Root</span>
+    <h2>A goddess, then a name</h2>
+    <p>The deepest layer is <strong>Demeter</strong>, the Greek goddess of the harvest and the earth. Her name is usually split into <em>dē</em> — an old element often read as "earth" — and <em>mētēr</em>, "mother," though scholars caution that the "earth" half is genuinely uncertain.<sup><a href="#s1">1</a></sup> From the goddess came the personal name <strong>Dimitrios</strong>, meaning roughly "devoted to Demeter," which became one of the most common male names in the Greek world.<sup><a href="#s1">1</a></sup></p>
+    <p>Greek surnames are typically <em>patronymic</em> — built from an ancestor's name. <strong>Demetropoulos</strong> simply means "descendant of Dimitrios," marking a family line that traced back to a man who carried the god-given name.<sup><a href="#s2">2</a></sup></p>
+    <p class="pull">A goddess's name, worn smooth by twenty-five centuries of use, still sits at the head of the word.</p>
+  </div>
+</section>
+
+<!-- ============ THE SAINT ============ -->
+<section class="block">
+  <div class="wrap reveal">
+    <span class="kicker">The Saint Who Kept It Alive</span>
+    <h2>Demetrios of Thessaloniki</h2>
+    <p>A given name needs a reason to stay popular for centuries. This one had a saint. <strong>Demetrios of Thessaloniki</strong> (died around 306) was a Roman officer executed for his faith who became one of Orthodoxy's great military saints. A sweet-scented oil was said to flow from his tomb, earning him the title <em>Myroblyte</em>, the "Myrrh-Streamer."<sup><a href="#s3">3</a></sup><sup><a href="#s4">4</a></sup></p>
+    <p>His cult did not merely survive — it exploded. By the sixth century the people of Thessaloniki credited him with saving the city from siege after siege, and the seventh-century <em>Miracula Sancti Demetrii</em> recorded their conviction that the city owed him its very existence.<sup><a href="#s5">5</a></sup> From the late ninth century his veneration crossed every frontier — into Bulgaria, Serbia, and Russia — turning a local martyr into a pan-Orthodox, pan-Balkan figure.<sup><a href="#s6">6</a></sup> The last Byzantine imperial dynasty, the Palaiologoi, adopted him as their patron.<sup><a href="#s5">5</a></sup></p>
+    <p>Wherever the saint's fame travelled, baptisms of "Dimitrios" followed. That is the engine that carried the name across more than a thousand years. When the Greek army finally liberated Thessaloniki from Ottoman rule in 1912, it entered the city on his feast day — <strong>October 26</strong>.<sup><a href="#s4">4</a></sup></p>
+  </div>
+</section>
+
+<!-- ============ HOW A NAME BECOMES A SURNAME ============ -->
+<section class="block tint">
+  <div class="wrap reveal">
+    <span class="kicker">From Given Name to Family Name</span>
+    <h2>How a name hardens into a surname</h2>
+    <p>Here is a detail most family histories skip: for most of this story, "Demetropoulos" was not yet a fixed, inherited surname at all. Hereditary family names were a medieval Byzantine invention. They were rare well into the ninth century; only by the eleventh and twelfth centuries did elite families routinely carry them — sometimes stringing several together to flaunt their lineage.<sup><a href="#s7">7</a></sup></p>
+    <p>For ordinary, rural Greeks, last names stayed fluid far longer. A man was known as the son of his father, and the name often changed with each generation. Surnames only truly <em>froze</em> — became permanent and inherited — through the record-keeping of the modern Greek state in the nineteenth century.<sup><a href="#s7">7</a></sup><sup><a href="#s8">8</a></sup> So the most likely truth is quieter than legend: the name behind this line probably set into its permanent form around the birth of independent Greece, not in antiquity. What is ancient is the <em>root</em>; what is modern is the <em>surname</em>.</p>
+
+    <div class="roots">
+      <div class="root">
+        <div class="tag">The root: ancient</div>
+        <div class="gk">Δημήτριος</div>
+        <div class="mean">Dimitrios — "devoted to Demeter." A baptismal name carried for millennia.</div>
+      </div>
+      <div class="root">
+        <div class="tag">The surname: modern</div>
+        <div class="gk">Δημητρόπουλος</div>
+        <div class="mean">Demetropoulos — fixed as a heritable family name only in the 1800s.</div>
+      </div>
+    </div>
+
+    <h3>The «-poulos» clue</h3>
+    <p>The ending <strong>-poulos</strong> comes from the Latin <em>pullus</em>, "a nestling or young animal," and works as a diminutive: "the little one of," and so "descendant of."<sup><a href="#s9">9</a></sup> It is also a regional fingerprint. Greek diminutives vary by place — <em>-akis</em> belongs to Crete, <em>-idis</em> to Pontus and Asia Minor — and <strong>-poulos is the characteristic ending of the Peloponnese</strong>, the southern peninsula of Greece. It points strongly, though not exclusively, to Moreote roots: in effect, the name is a return address.<sup><a href="#s9">9</a></sup></p>
+    <p class="pull">Read the ending and you can often read the homeland. This one says: the Peloponnese.</p>
+  </div>
+</section>
+
+<!-- ============ THE MOREA (THE GAP) ============ -->
+<section class="block dark">
+  <div class="wrap reveal">
+    <span class="kicker">The Long Middle</span>
+    <h2>A peninsula's thousand years</h2>
+    <p>Between the saint and the steamship lies the part of the story usually left blank — fifteen centuries in which the homeland the name points to lived several lives. The Peloponnese was known for most of them by another name: <strong>the Morea</strong>. To stand a family line against that backdrop is to watch empires wash over the same hills.</p>
+    <p>After the Fourth Crusade shattered Byzantium in 1204, crusader knights carved the peninsula into the Frankish <strong>Principality of Achaea</strong>, while Venice seized the harbors of Modon and Coron. The Byzantines clawed it back, and at <strong>Mystras</strong> — a steep, golden hill-city near ancient Sparta — they built the capital of the <strong>Despotate of the Morea</strong>. There, as the empire shrank everywhere else, its culture had a final flowering. The philosopher Gemistos Plethon taught in its shadow; and in January 1449 <strong>Constantine XI Palaiologos</strong>, the last emperor of the Romans, was proclaimed at Mystras before riding north to die on the walls of Constantinople in 1453.<sup><a href="#s10">10</a></sup></p>
+    <p>The Peloponnese, in other words, held the last light of Byzantium. Seven years later, in 1460, Mehmed II's Ottomans took it.<sup><a href="#s11">11</a></sup> But it was never fully tamed. The rugged <strong>Mani</strong> peninsula stayed all but independent, and across the mountains armed irregulars — the <em>klephts</em> — kept a tradition of defiance alive for generations.<sup><a href="#s12">12</a></sup> Venice briefly reconquered the whole Morea (1685–1715) before losing it again; a Russian-backed rising, the Orlov Revolt of 1770, flared and was crushed.<sup><a href="#s12">12</a></sup></p>
+    <p>Then, on the same ground, modern Greece was born. By tradition the War of Independence was proclaimed on <strong>25 March 1821</strong> at the monastery of Agia Lavra near Kalavryta — a scene historians treat as national legend more than literal fact — and that autumn the rebels, led by Theodoros Kolokotronis, stormed <strong>Tripolitsa</strong>, the Ottoman capital of the Morea.<sup><a href="#s12">12</a></sup> A family named for Saint Demetrios would have walked the same roads as that revolution.</p>
+
+    <div class="timeline-wrap">
+      <div class="tl">
+        <div class="tl-item era reveal"><div class="tl-date">c. 306 AD</div><div class="tl-title">A martyr in Thessaloniki</div><div class="tl-body">Saint Demetrios is executed; his cult will carry the name "Dimitrios" across the centuries.</div></div>
+        <div class="tl-item reveal"><div class="tl-date">1205</div><div class="tl-title">The Franks take the Morea</div><div class="tl-body">Crusaders found the Principality of Achaea; Venice holds the southern ports.</div></div>
+        <div class="tl-item era reveal"><div class="tl-date">1349–1460</div><div class="tl-title">Mystras &amp; the Despotate of the Morea</div><div class="tl-body">Byzantium's last cultural golden age. Constantine XI is proclaimed emperor here in 1449.</div></div>
+        <div class="tl-item reveal"><div class="tl-date">1460</div><div class="tl-title">Ottoman conquest</div><div class="tl-body">Mehmed II overruns the peninsula — but Mani and the klephts never fully submit.</div></div>
+        <div class="tl-item reveal"><div class="tl-date">1685–1770</div><div class="tl-title">Venetian interlude &amp; the Orlov Revolt</div><div class="tl-body">Venice retakes then loses the Morea; a Russian-backed rising fails in 1770.</div></div>
+        <div class="tl-item era reveal"><div class="tl-date">1821</div><div class="tl-title">A nation born in the Peloponnese</div><div class="tl-body">The Greek War of Independence ignites; Tripolitsa falls to Kolokotronis. Surnames begin to freeze into permanent form.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ THE GREAT DEPARTURE ============ -->
+<section class="block">
+  <div class="wrap reveal">
+    <span class="kicker">The Great Departure</span>
+    <h2>Why the Peloponnese emptied</h2>
+    <p>For much of the nineteenth century, Greece's fortunes rode on a tiny fruit: the <strong>Corinthian currant</strong>, the small dark raisin named for Corinth in the Peloponnese. When a vine plague devastated French vineyards from the 1860s, Greece rushed in to fill the gap — by 1889 France was buying roughly half of all Greek currant production, and currant acreage more than tripled.<sup><a href="#s13">13</a></sup></p>
+    <p>It was a boom built on someone else's misfortune, and it ended the way such booms do. As French vines recovered, France slammed the door with the Méline Tariff of 1892; new tariffs and California competition followed. Prices fell to the bare cost of production. In 1893 the Greek government, its debt swollen, defaulted — a moment popular memory attaches to Prime Minister Charilaos Trikoupis and the line "Regrettably, we are bankrupt."<sup><a href="#s14">14</a></sup> The Peloponnese, the heart of currant country, was hit hardest. Its people began to leave.<sup><a href="#s13">13</a></sup></p>
+    <p class="pull">A raisin lifted the Peloponnese up, and a tariff sent it across the Atlantic.</p>
+  </div>
+</section>
+
+<!-- ============ ACROSS A CONTINENT ============ -->
+<section class="block dark">
+  <div class="wrap reveal">
+    <span class="kicker">Across a Continent</span>
+    <h2>From the docks to the West</h2>
+    <p>Roughly <strong>421,000 Greeks</strong> are recorded arriving in the United States between 1890 and 1921 — the great majority from southern Greece, above all the Peloponnesian provinces of Laconia and Arcadia, and somewhere between 90 and 95 percent of them young men.<sup><a href="#s15">15</a></sup><sup><a href="#s16">16</a></sup> Many came meaning to earn and return; large numbers did exactly that, so the figure counts arrivals, not settlers.</p>
+
+    <div class="stats">
+      <div class="stat reveal"><div class="num" data-target="421000" data-suffix="">0</div><div class="lab">Greeks recorded arriving in the U.S., 1890–1921</div></div>
+      <div class="stat reveal"><div class="num" data-target="95" data-suffix="%">0</div><div class="lab">of 1899–1910 arrivals were men</div></div>
+      <div class="stat reveal"><div class="num" data-target="100" data-suffix="/yr">0</div><div class="lab">Greek quota after the 1924 immigration act</div></div>
+    </div>
+
+    <p>Most arrived through New York and clustered first along the East Coast and in the industrial Midwest. From there a striking share pushed west, recruited for hard labor in mining, lumber, and above all railroad construction — often through labor agents, or <em>padrones</em>, such as the notorious Leonidas Skliris, the self-styled "Czar of the Greeks." One community history estimates Greeks made up as much as a fifth of the labor force on some Western railroads in the late 1910s; the precise share is uncertain, but the pattern of Greek work gangs laying Western track is beyond doubt.<sup><a href="#s17">17</a></sup></p>
+    <p>The community was never large by the standards of Italian or Polish migration. It expanded fast and then plateaued: the <strong>Emergency Quota Act of 1921</strong> and the <strong>Immigration Act of 1924</strong> cut the annual Greek quota to just 100 people — in 1924, more Greeks left the United States than were allowed in.<sup><a href="#s18">18</a></sup></p>
+
+    <figure class="mapfig reveal">
+      <div class="map-card" style="background:#0f2c41;border-color:rgba(194,161,74,.3);">
+        <svg viewBox="0 0 1000 420" role="img" aria-label="A stylized map tracing the journey from the Peloponnese across the Atlantic to New York and onward to the American West.">
+          <defs>
+            <radialGradient id="ocean" cx="50%" cy="40%" r="80%">
+              <stop offset="0%" stop-color="#16415d"/><stop offset="100%" stop-color="#0c2334"/>
+            </radialGradient>
+          </defs>
+          <rect width="1000" height="420" fill="url(#ocean)"/>
+          <!-- faint lat/long grid -->
+          <g stroke="#2c5570" stroke-width="1" opacity=".35">
+            <line x1="0" y1="105" x2="1000" y2="105"/><line x1="0" y1="210" x2="1000" y2="210"/><line x1="0" y1="315" x2="1000" y2="315"/>
+            <line x1="200" y1="0" x2="200" y2="420"/><line x1="400" y1="0" x2="400" y2="420"/><line x1="600" y1="0" x2="600" y2="420"/><line x1="800" y1="0" x2="800" y2="420"/>
+          </g>
+          <!-- abstract landmasses -->
+          <path d="M70 150 Q150 120 230 140 Q300 160 300 230 Q260 300 170 300 Q90 290 60 240 Z" fill="#1d4a36" opacity=".55"/>
+          <text x="175" y="225" fill="#9fcaa9" font-family="Inter" font-size="15" text-anchor="middle" opacity=".8">N. AMERICA</text>
+          <path d="M760 150 Q840 130 910 160 Q950 200 920 250 Q860 290 800 270 Q740 240 760 180 Z" fill="#3a3a22" opacity=".55"/>
+          <text x="850" y="215" fill="#cabf8e" font-family="Inter" font-size="14" text-anchor="middle" opacity=".8">GREECE</text>
+          <!-- journey path -->
+          <path class="journey-path" d="M250 250 Q500 80 720 200" fill="none" stroke="#c2a14a" stroke-width="3"/>
+          <path class="journey-path" d="M250 250 Q160 250 110 215" fill="none" stroke="#b5651d" stroke-width="3"/>
+          <!-- nodes -->
+          <g font-family="Inter" font-size="14" fill="#f4ede0">
+            <circle cx="720" cy="200" r="7" fill="#c2a14a"/><text x="720" y="182" text-anchor="middle">Peloponnese</text>
+            <circle cx="250" cy="250" r="7" fill="#c2a14a"/><text x="250" y="280" text-anchor="middle">New York</text>
+            <circle cx="110" cy="215" r="6" fill="#b5651d"/><text x="95" y="200" text-anchor="end">The West</text>
+          </g>
+          <text x="500" y="120" text-anchor="middle" fill="#cdbfa3" font-family="Spectral" font-style="italic" font-size="16">the Atlantic crossing</text>
+        </svg>
+      </div>
+      <figcaption>The path the surname's likely homeland joined: out of the Peloponnese, across the Atlantic to New York, and onward into the American West. Map is schematic, not to scale.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ HOW COMMON ============ -->
+<section class="block tint">
+  <div class="wrap reveal">
+    <span class="kicker">How Common Was the Name?</span>
+    <h2>A common root, a rare surname</h2>
+    <p>It is worth separating two things that are easily confused. The given name <strong>Dimitrios</strong> was — and remains — extremely common, carried by countless men over many centuries. The specific surname <strong>Demetropoulos</strong> was never common. It identified one particular family line, not a broad class of people.</p>
+    <p>That is why so few carry it today. Current genealogical estimates put <strong>Demetropoulos</strong> near <strong>199 people in the United States</strong> and about <strong>224 worldwide</strong> — on the order of one in thirty-two million.<sup><a href="#s19">19</a></sup> The thinned-out American spelling <strong>Metrulas</strong> is rarer still: just <strong>17 people worldwide</strong>, every one of them in the United States, and within it, every one in California.<sup><a href="#s20">20</a></sup> The name was always limited. It did not shrink so much as it began small and specific.</p>
+    <div class="stats">
+      <div class="stat reveal"><div class="num" data-target="224" data-suffix="">0</div><div class="lab">people named Demetropoulos worldwide</div></div>
+      <div class="stat reveal"><div class="num" data-target="17" data-suffix="">0</div><div class="lab">people named Metrulas worldwide</div></div>
+      <div class="stat reveal"><div class="num" data-target="100" data-suffix="%">0</div><div class="lab">of them in California</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAMOUS NAMES ============ -->
+<section class="block">
+  <div class="wrap reveal">
+    <span class="kicker">The Obvious Question</span>
+    <h2>Related to the famous ones?</h2>
+    <p>Several well-known figures carry names that look like close cousins: the conductor <strong>Dimitri Mitropoulos</strong>, the investor <strong>Dean Metropoulos</strong>, the physicist <strong>Nicholas Metropolis</strong>. It is tempting to claim them. The evidence advises caution — and the reason is a small linguistic trick.</p>
+    <p>Both family names contain the Greek word <em>mētēr</em>, "mother." That shared syllable is exactly why they <em>look</em> alike. But "mother" sits inside two entirely different words:</p>
+
+    <div class="roots">
+      <div class="root">
+        <div class="tag">Your root</div>
+        <div class="gk">Δημήτηρ → Δημήτριος</div>
+        <div class="mean"><strong>Demeter / Dimitrios.</strong> The harvest goddess ("earth-mother") and the name "devoted to" her. This is the root of <strong>Demetropoulos</strong>.</div>
+      </div>
+      <div class="root">
+        <div class="tag">Their root</div>
+        <div class="gk">μητρόπολις</div>
+        <div class="mean"><strong>Metropolis.</strong> "Mother-city," and in the Church the <em>metropolitan</em>, a senior bishop. This is the prevailing root of <strong>Mitropoulos</strong>.</div>
+      </div>
+    </div>
+
+    <p>A goddess's name and the word for "mother-city" are different words with different ancestors. So despite the resemblance, these famous names most likely trace not to Dimitrios but to a bishop's town — a different door into the same-sounding hallway.</p>
+
+    <div class="names">
+      <div class="ncard reveal">
+        <h4>Dimitri Mitropoulos</h4>
+        <div class="who">Conductor · Μητρόπουλος</div>
+        <p>Most sources derive his name from <em>mitropolis</em> — a metropolitan's town. Fittingly, his family was deeply clerical: a grandfather and two uncles were priests.<sup><a href="#s21">21</a></sup></p>
+        <span class="verdict v-diff">Different root</span>
+      </div>
+      <div class="ncard reveal">
+        <h4>Dean Metropoulos</h4>
+        <div class="who">Investor · Μητρόπουλος</div>
+        <p>The same surname as Mitropoulos, simply spelled with an "e." Same metropolis/metropolitan etymology.<sup><a href="#s21">21</a></sup></p>
+        <span class="verdict v-diff">Different root</span>
+      </div>
+      <div class="ncard reveal">
+        <h4>Nicholas Metropolis</h4>
+        <div class="who">Physicist · Νικόλαος Μητρόπουλος</div>
+        <p>"Metropolis" is an Anglicized respelling of <em>Mitropoulos</em> — it collides with the English word, but arrives there through the surname.<sup><a href="#s22">22</a></sup></p>
+        <span class="verdict v-diff">Different root</span>
+      </div>
+      <div class="ncard reveal">
+        <h4>One honest caveat</h4>
+        <div class="who">The "Mitros" loophole</div>
+        <p><em>Mitros</em> is a real pet-form of Dimitrios, and one surname dictionary derives Mitropoulos from it. So for <em>some</em> bearers, a distant link to Dimitrios can't be ruled out.<sup><a href="#s23">23</a></sup></p>
+        <span class="verdict v-maybe">Not impossible</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ A NAME STILL LIVED IN ============ -->
+<section class="block dark">
+  <div class="wrap reveal" style="text-align:center;">
+    <span class="kicker">Coda</span>
+    <h2>A name still lived in</h2>
+    <p style="max-width:600px;margin:0 auto 1.2em;">One thread runs unbroken through all of it. In Greek tradition, a person named for a saint celebrates that saint's feast like a second birthday. For the line behind this name, that day is <strong>October 26</strong> — the feast of Saint Demetrios.<sup><a href="#s24">24</a></sup></p>
+    <p class="pull" style="border:none;text-align:center;max-width:680px;margin:.4em auto;">A small, living link to a story more than seventeen centuries old, still attached to an ordinary modern surname.</p>
+  </div>
+</section>
+
+<!-- ============ SOURCES ============ -->
+<section class="sources" id="sources">
+  <div class="wrap">
+    <span class="kicker">Sources &amp; Notes</span>
+    <h2>The record behind the story</h2>
+    <p class="note">The etymology, the saint, the currant crisis, and the migration figures are well documented below. Two honest flags: the Peloponnese origin is a strong, evidence-based inference from the name's <em>form</em>, not a proven fact for this specific line; and several figures (the 421,000 arrivals, the railroad-labor share, the bankruptcy quote) are real but carry the caveats noted in the text.</p>
+    <ol>
+      <li id="s1"><a href="https://www.behindthename.com/name/demetrios">Demetrios — Behind the Name</a>; and <a href="https://en.wiktionary.org/wiki/%CE%94%CE%B7%CE%BC%CE%AE%CF%84%CE%B7%CF%81">Δημήτηρ — Wiktionary</a>.</li>
+      <li id="s2"><a href="https://ancestralfindings.com/the-origin-and-meaning-of-your-greek-surname/">The Origin and Meaning of Your Greek Surname — Ancestral Findings</a>.</li>
+      <li id="s3"><a href="https://en.wikipedia.org/wiki/Demetrius_of_Thessaloniki">Demetrius of Thessaloniki — Wikipedia</a>.</li>
+      <li id="s4"><a href="https://www.goarch.org/-/feast-of-the-holy-and-glorious-great-martyr-saint-demetrios-the-myrrh-streamer">Feast of the Great Martyr Saint Demetrios the Myrrh-Streamer — Greek Orthodox Archdiocese of America</a>.</li>
+      <li id="s5"><a href="https://en.wikipedia.org/wiki/Hagios_Demetrios">Hagios Demetrios — Wikipedia</a> (cult, the <em>Miracula</em>, Palaiologan patronage).</li>
+      <li id="s6"><a href="https://ojs.lib.uom.gr/index.php/BalkanStudies/article/view/1080">Dimitri Obolensky, "The Cult of St. Demetrius of Thessaloniki in the History of Byzantine–Slav Relations," <em>Balkan Studies</em></a>.</li>
+      <li id="s7"><a href="https://en.wikipedia.org/wiki/Greek_name">Greek name — Wikipedia</a> (Byzantine surnames; 19th-century codification).</li>
+      <li id="s8"><a href="https://www.myheritage.com/wiki/Greek_surnames">Greek Surnames — MyHeritage Wiki</a> (village patronymics fixed after the 1820s).</li>
+      <li id="s9"><a href="https://quora.opoudjis.net/2015/10/18/2015-10-18-what-does-opoulos-mean-at-the-end-of-greek-names/">Nick Nicholas, "What does '-opoulos' mean at the end of Greek names?"</a> (Latin <em>pullus</em>; -opoulos as the Peloponnesian diminutive).</li>
+      <li id="s10"><a href="https://en.wikipedia.org/wiki/Despotate_of_the_Morea">Despotate of the Morea</a>; <a href="https://en.wikipedia.org/wiki/Mystras">Mystras</a>; <a href="https://en.wikipedia.org/wiki/Constantine_XI_Palaiologos">Constantine XI Palaiologos</a> — Wikipedia.</li>
+      <li id="s11"><a href="https://en.wikipedia.org/wiki/Ottoman_conquest_of_the_Morea">Ottoman conquest of the Morea — Wikipedia</a>.</li>
+      <li id="s12"><a href="https://en.wikipedia.org/wiki/Greek_War_of_Independence">Greek War of Independence</a>; <a href="https://en.wikipedia.org/wiki/Mani_Peninsula">Mani Peninsula</a>; <a href="https://en.wikipedia.org/wiki/Orlov_revolt">Orlov Revolt</a>; <a href="https://en.wikipedia.org/wiki/Siege_of_Tripolitsa">Siege of Tripolitsa</a> — Wikipedia.</li>
+      <li id="s13"><a href="https://www.europenowjournal.org/2017/05/02/commercial-agriculture-and-the-landscape-of-capitalism-in-nineteenth-century-greece/">David Idol, "Commercial Agriculture and the Landscape of Capitalism in Nineteenth-Century Greece" — EuropeNow</a>; <a href="https://winesofgreece.org/historicals/1879/">"1879 – The Currant Crisis" — Wines of Greece</a>.</li>
+      <li id="s14"><a href="https://greekreporter.com/2014/12/10/on-this-day-charilaos-trikoupis-declares-greece-bankrupt/">"Charilaos Trikoupis Declares Greece Bankrupt" — GreekReporter</a>; <a href="https://thedailyeconomy.org/article/greeces-19th-century-currant-crisis-a-warning-against-temporary-government-support/">"Greece's 19th Century Currant Crisis" — The Daily Economy</a>.</li>
+      <li id="s15"><a href="https://www.hapsoc.org/greeks-in-america/">"The History of Greek Immigration to America" — Hellenic American Project, Queens College/CUNY</a> (≈421,000, 1890–1921).</li>
+      <li id="s16"><a href="https://www.ebsco.com/research-starters/social-sciences-and-humanities/greek-immigrants">"Greek Immigrants" — EBSCO Research Starters</a> (≈95% male, 1899–1910).</li>
+      <li id="s17"><a href="https://immigrantalexandria.org/greek-immigration-to-alexandria/greek-immigrants-and-labor/">"Greek Immigrants and Labor" — Immigrant Alexandria</a>; <a href="https://historytogo.utah.gov/early-greek-immigrants/">Helen Z. Papanikolas, "Early Greek Immigrants" — <em>Utah Historical Quarterly</em></a> (padrones; railroad/mine labor).</li>
+      <li id="s18"><a href="https://history.state.gov/milestones/1921-1936/immigration-act">"The Immigration Act of 1924" — U.S. State Dept., Office of the Historian</a>; <a href="https://historymatters.gmu.edu/d/5078">"Immigration Quotas, 1925–1927" — History Matters (GMU)</a> (Greek quota = 100).</li>
+      <li id="s19"><a href="https://forebears.io/surnames/demetropoulos">Demetropoulos — Forebears</a> (199 U.S.; 224 worldwide; ≈1 in 32.5 million).</li>
+      <li id="s20"><a href="https://forebears.io/surnames/metrulas">Metrulas — Forebears</a> (17 worldwide, all in the U.S./California).</li>
+      <li id="s21"><a href="https://en.wikipedia.org/wiki/Mitropoulos">Mitropoulos (disambiguation) — Wikipedia</a>; <a href="https://namecensus.com/last-names/mitropoulos-surname-popularity/">"Mitropoulos" — Name Census</a> (<em>mitropolis</em>, "mother-city").</li>
+      <li id="s22"><a href="https://en.wikipedia.org/wiki/Nicholas_Metropolis">Nicholas Metropolis — Wikipedia</a> (Greek: Νικόλαος Μητρόπουλος).</li>
+      <li id="s23"><a href="https://www.ancestry.com/last-name-meaning/mitropoulos">Mitropoulos surname meaning — Ancestry</a> (the dissenting <em>Mitros</em> / Dimitrios derivation).</li>
+      <li id="s24"><a href="https://greekreporter.com/2025/08/15/ancient-greek-naming-customs-people-named-ancient-greece/">"The Naming Customs of Greece" — GreekReporter</a> (name-day tradition).</li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  <svg class="meander" viewBox="0 0 200 22" aria-hidden="true"><path d="M5 16 H25 V6 H45 V16 H65 V6 H85 V16 H105 V6 H125 V16 H145 V6 H165 V16 H185" fill="none" stroke="#c2a14a" stroke-width="2.2"/></svg>
+  <div>From Demeter to Metrulas · A family name history</div>
+  <div style="margin-top:6px;opacity:.7;">Researched &amp; designed with care · October 26</div>
+</footer>
+
+<script>
+  // Reading progress
+  const prog=document.getElementById('progress');
+  addEventListener('scroll',()=>{
+    const h=document.documentElement;
+    const p=h.scrollTop/(h.scrollHeight-h.clientHeight)*100;
+    prog.style.width=p+'%';
+  },{passive:true});
+
+  // Reveal on scroll
+  const io=new IntersectionObserver((es)=>{
+    es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+  },{threshold:.16});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  // Animated counters
+  const fmt=n=>n>=10000?n.toLocaleString('en-US'):String(n);
+  const countIO=new IntersectionObserver((es)=>{
+    es.forEach(e=>{
+      if(!e.isIntersecting)return;
+      const el=e.target, target=+el.dataset.target, suf=el.dataset.suffix||'';
+      const dur=1400, t0=performance.now();
+      const tick=(t)=>{
+        const k=Math.min(1,(t-t0)/dur);
+        const eased=1-Math.pow(1-k,3);
+        el.textContent=fmt(Math.round(target*eased))+suf;
+        if(k<1)requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+      countIO.unobserve(el);
+    });
+  },{threshold:.6});
+  document.querySelectorAll('.num[data-target]').forEach(el=>countIO.observe(el));
+
+  // Hero starfield / drifting motes
+  const cv=document.getElementById('stars');
+  if(cv){
+    const ctx=cv.getContext('2d');
+    let w,h,pts;
+    const init=()=>{
+      w=cv.width=cv.offsetWidth; h=cv.height=cv.offsetHeight;
+      pts=Array.from({length:Math.min(90,Math.floor(w/14))},()=>({
+        x:Math.random()*w,y:Math.random()*h,r:Math.random()*1.6+.4,
+        vx:(Math.random()-.5)*.18,vy:(Math.random()-.5)*.18,a:Math.random()*.5+.2
+      }));
+    };
+    const draw=()=>{
+      ctx.clearRect(0,0,w,h);
+      pts.forEach(p=>{
+        p.x+=p.vx;p.y+=p.vy;
+        if(p.x<0)p.x=w;if(p.x>w)p.x=0;if(p.y<0)p.y=h;if(p.y>h)p.y=0;
+        ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,7);
+        ctx.fillStyle='rgba(200,166,74,'+p.a+')';ctx.fill();
+      });
+      requestAnimationFrame(draw);
+    };
+    init();draw();addEventListener('resize',init);
+  }
+</script>
+</body>
+</html>
