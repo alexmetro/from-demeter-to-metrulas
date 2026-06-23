@@ -128,6 +128,29 @@
     margin-top:.7em;line-height:1.5;text-align:center;}
   .wide{max-width:1080px;}
 
+  /* ---------- Image plates (real period imagery) ---------- */
+  .plate{margin:2.8em auto;}
+  .plate .mat{display:block;background:#fbf8f1;padding:10px;border-radius:5px;
+    box-shadow:0 12px 32px rgba(28,27,24,.12);}
+  .plate img{width:100%;height:auto;display:block;border-radius:2px;}
+  .plate.portrait{max-width:430px;}
+  .plate.figland{max-width:760px;}
+  .plate figcaption{margin-top:.85em;}
+  .plate figcaption .cap{font-style:italic;color:var(--ink);}
+  .plate .credit{display:block;margin-top:.35em;font-size:.72rem;opacity:.62;
+    font-style:normal;letter-spacing:.01em;}
+  a.zoom{border:none;display:block;}
+  a.zoom:hover .mat{box-shadow:0 14px 38px rgba(28,27,24,.22);}
+  .block.dark .plate .mat{background:#0e2a3d;border:1px solid rgba(194,161,74,.28);
+    box-shadow:0 16px 38px rgba(0,0,0,.38);}
+  .block.dark .plate figcaption{color:#cfc4ad;}
+  .block.dark .plate figcaption .cap{color:#ede4d2;}
+  /* float a portrait beside text on wide screens */
+  @media(min-width:780px){
+    .plate.inset-right{float:right;width:300px;margin:.4em 0 1.4em 2.2em;}
+    .plate.inset-left{float:left;width:300px;margin:.4em 2.2em 1.4em 0;}
+  }
+
   /* ---------- Timeline ---------- */
   .timeline-wrap{max-width:900px;margin:0 auto;padding:10px 26px;}
   .tl{position:relative;margin:30px 0 10px;padding-left:34px;}
@@ -238,6 +261,10 @@
     <span class="kicker">The Ancient Root</span>
     <h2>A goddess, then a name</h2>
     <p>The deepest layer is <strong>Demeter</strong>, the Greek goddess of the harvest and the earth. Her name is usually split into <em>dē</em> — an old element often read as "earth" — and <em>mētēr</em>, "mother," though scholars caution that the "earth" half is genuinely uncertain.<sup><a href="#s1">1</a></sup> From the goddess came the personal name <strong>Dimitrios</strong>, meaning roughly "devoted to Demeter," which became one of the most common male names in the Greek world.<sup><a href="#s1">1</a></sup></p>
+    <figure class="plate portrait inset-right">
+      <a class="zoom" href="https://commons.wikimedia.org/wiki/File:Great_Eleusinian_relief_(NAMA_126).jpg" target="_blank" rel="noopener"><span class="mat"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Great_Eleusinian_relief_%28NAMA_126%29.jpg/1280px-Great_Eleusinian_relief_%28NAMA_126%29.jpg" alt="The Great Eleusinian Relief: Demeter hands wheat to the youth Triptolemos as Persephone looks on." loading="lazy"></span></a>
+      <figcaption><span class="cap">Demeter (left) sends the youth Triptolemos out to teach humankind agriculture, c. 430 BC.</span><span class="credit">The Great Eleusinian Relief, National Archaeological Museum, Athens · public domain, via Wikimedia Commons</span></figcaption>
+    </figure>
     <p>Greek surnames are typically <em>patronymic</em> — built from an ancestor's name. <strong>Demetropoulos</strong> simply means "descendant of Dimitrios," marking a family line that traced back to a man who carried the god-given name.<sup><a href="#s2">2</a></sup></p>
     <p class="pull">A goddess's name, worn smooth by twenty-five centuries of use, still sits at the head of the word.</p>
   </div>
@@ -249,6 +276,10 @@
     <span class="kicker">The Saint Who Kept It Alive</span>
     <h2>Demetrios of Thessaloniki</h2>
     <p>A given name needs a reason to stay popular for centuries. This one had a saint. <strong>Demetrios of Thessaloniki</strong> (died around 306) was a Roman officer executed for his faith who became one of Orthodoxy's great military saints. A sweet-scented oil was said to flow from his tomb, earning him the title <em>Myroblyte</em>, the "Myrrh-Streamer."<sup><a href="#s3">3</a></sup><sup><a href="#s4">4</a></sup></p>
+    <figure class="plate portrait inset-left">
+      <a class="zoom" href="https://commons.wikimedia.org/wiki/File:Meister_der_Demetrius-Kirche_in_Saloniki_001.jpg" target="_blank" rel="noopener"><span class="mat"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Meister_der_Demetrius-Kirche_in_Saloniki_001.jpg/1280px-Meister_der_Demetrius-Kirche_in_Saloniki_001.jpg" alt="A 7th-century Byzantine mosaic of Saint Demetrios, haloed, with a raised hand, in the Church of Hagios Demetrios, Thessaloniki." loading="lazy"></span></a>
+      <figcaption><span class="cap">Saint Demetrios in mosaic — one of the 7th-century panels that survived the great fire of 1917.</span><span class="credit">Church of Hagios Demetrios, Thessaloniki · public domain, via Wikimedia Commons</span></figcaption>
+    </figure>
     <p>His cult did not merely survive — it exploded. By the sixth century the people of Thessaloniki credited him with saving the city from siege after siege, and the seventh-century <em>Miracula Sancti Demetrii</em> recorded their conviction that the city owed him its very existence.<sup><a href="#s5">5</a></sup> From the late ninth century his veneration crossed every frontier — into Bulgaria, Serbia, and Russia — turning a local martyr into a pan-Orthodox, pan-Balkan figure.<sup><a href="#s6">6</a></sup> The last Byzantine imperial dynasty, the Palaiologoi, adopted him as their patron.<sup><a href="#s5">5</a></sup></p>
     <p>Wherever the saint's fame travelled, baptisms of "Dimitrios" followed. That is the engine that carried the name across more than a thousand years. When the Greek army finally liberated Thessaloniki from Ottoman rule in 1912, it entered the city on his feast day — <strong>October 26</strong>.<sup><a href="#s4">4</a></sup></p>
   </div>
@@ -287,9 +318,17 @@
     <span class="kicker">The Long Middle</span>
     <h2>A peninsula's thousand years</h2>
     <p>Between the saint and the steamship lies the part of the story usually left blank — fifteen centuries in which the homeland the name points to lived several lives. The Peloponnese was known for most of them by another name: <strong>the Morea</strong>. To stand a family line against that backdrop is to watch empires wash over the same hills.</p>
+    <figure class="plate figland">
+      <a class="zoom" href="https://commons.wikimedia.org/wiki/File:Peloponneso_hoggidi_Morea_-_Coronelli_Vincenzo_-_1686.jpg" target="_blank" rel="noopener"><span class="mat"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Peloponneso_hoggidi_Morea_-_Coronelli_Vincenzo_-_1686.jpg/1280px-Peloponneso_hoggidi_Morea_-_Coronelli_Vincenzo_-_1686.jpg" alt="A 1686 Venetian engraved map of the Peloponnese, captioned 'Peloponneso hoggidi Morea', showing its coastlines, gulfs and towns." loading="lazy"></span></a>
+      <figcaption><span class="cap">"Peloponneso hoggidi Morea" — the Peloponnese, today the Morea — engraved by the Venetian cartographer Vincenzo Coronelli, 1686. <em>Tap to enlarge.</em></span><span class="credit">Vincenzo Coronelli, 1686 · public domain, via Wikimedia Commons</span></figcaption>
+    </figure>
     <p>After the Fourth Crusade shattered Byzantium in 1204, crusader knights carved the peninsula into the Frankish <strong>Principality of Achaea</strong>, while Venice seized the harbors of Modon and Coron. The Byzantines clawed it back, and at <strong>Mystras</strong> — a steep, golden hill-city near ancient Sparta — they built the capital of the <strong>Despotate of the Morea</strong>. There, as the empire shrank everywhere else, its culture had a final flowering. The philosopher Gemistos Plethon taught in its shadow; and in January 1449 <strong>Constantine XI Palaiologos</strong>, the last emperor of the Romans, was proclaimed at Mystras before riding north to die on the walls of Constantinople in 1453.<sup><a href="#s10">10</a></sup></p>
     <p>The Peloponnese, in other words, held the last light of Byzantium. Seven years later, in 1460, Mehmed II's Ottomans took it.<sup><a href="#s11">11</a></sup> But it was never fully tamed. The rugged <strong>Mani</strong> peninsula stayed all but independent, and across the mountains armed irregulars — the <em>klephts</em> — kept a tradition of defiance alive for generations.<sup><a href="#s12">12</a></sup> Venice briefly reconquered the whole Morea (1685–1715) before losing it again; a Russian-backed rising, the Orlov Revolt of 1770, flared and was crushed.<sup><a href="#s12">12</a></sup></p>
     <p>Then, on the same ground, modern Greece was born. By tradition the War of Independence was proclaimed on <strong>25 March 1821</strong> at the monastery of Agia Lavra near Kalavryta — a scene historians treat as national legend more than literal fact — and that autumn the rebels, led by Theodoros Kolokotronis, stormed <strong>Tripolitsa</strong>, the Ottoman capital of the Morea.<sup><a href="#s12">12</a></sup> A family named for Saint Demetrios would have walked the same roads as that revolution.</p>
+    <figure class="plate portrait">
+      <a class="zoom" href="https://commons.wikimedia.org/wiki/File:%CE%92%CF%81%CF%85%CE%B6%CE%AC%CE%BA%CE%B7%CF%82,_%CE%98%CE%B5%CF%8C%CE%B4%CF%89%CF%81%CE%BF%CF%82_-_%CE%9F_%CE%A0%CE%B1%CE%BB%CE%B1%CE%B9%CF%8E%CE%BD_%CE%A0%CE%B1%CF%84%CF%81%CF%8E%CE%BD_%CE%93%CE%B5%CF%81%CE%BC%CE%B1%CE%BD%CF%8C%CF%82_%CE%B5%CF%85%CE%BB%CE%BF%CE%B3%CE%B5%CE%AF_%CF%84%CE%B7_%CF%83%CE%B7%CE%BC%CE%B1%CE%AF%CE%B1_%CF%84%CE%B7%CF%82_%CE%95%CF%80%CE%B1%CE%BD%CE%AC%CF%83%CF%84%CE%B1%CF%83%CE%B7%CF%82,_1865.jpg" target="_blank" rel="noopener"><span class="mat"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/%CE%92%CF%81%CF%85%CE%B6%CE%AC%CE%BA%CE%B7%CF%82%2C_%CE%98%CE%B5%CF%8C%CE%B4%CF%89%CF%81%CE%BF%CF%82_-_%CE%9F_%CE%A0%CE%B1%CE%BB%CE%B1%CE%B9%CF%8E%CE%BD_%CE%A0%CE%B1%CF%84%CF%81%CF%8E%CE%BD_%CE%93%CE%B5%CF%81%CE%BC%CE%B1%CE%BD%CF%8C%CF%82_%CE%B5%CF%85%CE%BB%CE%BF%CE%B3%CE%B5%CE%AF_%CF%84%CE%B7_%CF%83%CE%B7%CE%BC%CE%B1%CE%AF%CE%B1_%CF%84%CE%B7%CF%82_%CE%95%CF%80%CE%B1%CE%BD%CE%AC%CF%83%CF%84%CE%B1%CF%83%CE%B7%CF%82%2C_1865.jpg" alt="Theodoros Vryzakis's 1865 painting of Bishop Germanos of Old Patras blessing the revolutionary flag, surrounded by kneeling fighters." loading="lazy"></span></a>
+      <figcaption><span class="cap">Bishop Germanos of Old Patras blesses the banner of the revolution — Theodoros Vryzakis's 1865 vision of the moment the war began.</span><span class="credit">Theodoros Vryzakis, 1865, National Gallery, Athens · public domain, via Wikimedia Commons</span></figcaption>
+    </figure>
 
     <div class="timeline-wrap">
       <div class="tl">
@@ -311,6 +350,10 @@
     <h2>Why the Peloponnese emptied</h2>
     <p>For much of the nineteenth century, Greece's fortunes rode on a tiny fruit: the <strong>Corinthian currant</strong>, the small dark raisin named for Corinth in the Peloponnese. When a vine plague devastated French vineyards from the 1860s, Greece rushed in to fill the gap — by 1889 France was buying roughly half of all Greek currant production, and currant acreage more than tripled.<sup><a href="#s13">13</a></sup></p>
     <p>It was a boom built on someone else's misfortune, and it ended the way such booms do. As French vines recovered, France slammed the door with the Méline Tariff of 1892; new tariffs and California competition followed. Prices fell to the bare cost of production. In 1893 the Greek government, its debt swollen, defaulted — a moment popular memory attaches to Prime Minister Charilaos Trikoupis and the line "Regrettably, we are bankrupt."<sup><a href="#s14">14</a></sup> The Peloponnese, the heart of currant country, was hit hardest. Its people began to leave.<sup><a href="#s13">13</a></sup></p>
+    <figure class="plate figland">
+      <a class="zoom" href="https://commons.wikimedia.org/wiki/File:VolanakisVolosHarbour.jpg" target="_blank" rel="noopener"><span class="mat"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/VolanakisVolosHarbour.jpg/1280px-VolanakisVolosHarbour.jpg" alt="A 19th-century painting of a busy Greek harbour crowded with sailing ships and small boats." loading="lazy"></span></a>
+      <figcaption><span class="cap">A Greek harbour in the age of departure, by Konstantinos Volanakis, the father of Greek seascape painting.</span><span class="credit">Konstantinos Volanakis, late 19th century · public domain, via Wikimedia Commons</span></figcaption>
+    </figure>
     <p class="pull">A raisin lifted the Peloponnese up, and a tariff sent it across the Atlantic.</p>
   </div>
 </section>
@@ -331,38 +374,9 @@
     <p>Most arrived through New York and clustered first along the East Coast and in the industrial Midwest. From there a striking share pushed west, recruited for hard labor in mining, lumber, and above all railroad construction — often through labor agents, or <em>padrones</em>, such as the notorious Leonidas Skliris, the self-styled "Czar of the Greeks." One community history estimates Greeks made up as much as a fifth of the labor force on some Western railroads in the late 1910s; the precise share is uncertain, but the pattern of Greek work gangs laying Western track is beyond doubt.<sup><a href="#s17">17</a></sup></p>
     <p>The community was never large by the standards of Italian or Polish migration. It expanded fast and then plateaued: the <strong>Emergency Quota Act of 1921</strong> and the <strong>Immigration Act of 1924</strong> cut the annual Greek quota to just 100 people — in 1924, more Greeks left the United States than were allowed in.<sup><a href="#s18">18</a></sup></p>
 
-    <figure class="mapfig reveal">
-      <div class="map-card" style="background:#0f2c41;border-color:rgba(194,161,74,.3);">
-        <svg viewBox="0 0 1000 420" role="img" aria-label="A stylized map tracing the journey from the Peloponnese across the Atlantic to New York and onward to the American West.">
-          <defs>
-            <radialGradient id="ocean" cx="50%" cy="40%" r="80%">
-              <stop offset="0%" stop-color="#16415d"/><stop offset="100%" stop-color="#0c2334"/>
-            </radialGradient>
-          </defs>
-          <rect width="1000" height="420" fill="url(#ocean)"/>
-          <!-- faint lat/long grid -->
-          <g stroke="#2c5570" stroke-width="1" opacity=".35">
-            <line x1="0" y1="105" x2="1000" y2="105"/><line x1="0" y1="210" x2="1000" y2="210"/><line x1="0" y1="315" x2="1000" y2="315"/>
-            <line x1="200" y1="0" x2="200" y2="420"/><line x1="400" y1="0" x2="400" y2="420"/><line x1="600" y1="0" x2="600" y2="420"/><line x1="800" y1="0" x2="800" y2="420"/>
-          </g>
-          <!-- abstract landmasses -->
-          <path d="M70 150 Q150 120 230 140 Q300 160 300 230 Q260 300 170 300 Q90 290 60 240 Z" fill="#1d4a36" opacity=".55"/>
-          <text x="175" y="225" fill="#9fcaa9" font-family="Inter" font-size="15" text-anchor="middle" opacity=".8">N. AMERICA</text>
-          <path d="M760 150 Q840 130 910 160 Q950 200 920 250 Q860 290 800 270 Q740 240 760 180 Z" fill="#3a3a22" opacity=".55"/>
-          <text x="850" y="215" fill="#cabf8e" font-family="Inter" font-size="14" text-anchor="middle" opacity=".8">GREECE</text>
-          <!-- journey path -->
-          <path class="journey-path" d="M250 250 Q500 80 720 200" fill="none" stroke="#c2a14a" stroke-width="3"/>
-          <path class="journey-path" d="M250 250 Q160 250 110 215" fill="none" stroke="#b5651d" stroke-width="3"/>
-          <!-- nodes -->
-          <g font-family="Inter" font-size="14" fill="#f4ede0">
-            <circle cx="720" cy="200" r="7" fill="#c2a14a"/><text x="720" y="182" text-anchor="middle">Peloponnese</text>
-            <circle cx="250" cy="250" r="7" fill="#c2a14a"/><text x="250" y="280" text-anchor="middle">New York</text>
-            <circle cx="110" cy="215" r="6" fill="#b5651d"/><text x="95" y="200" text-anchor="end">The West</text>
-          </g>
-          <text x="500" y="120" text-anchor="middle" fill="#cdbfa3" font-family="Spectral" font-style="italic" font-size="16">the Atlantic crossing</text>
-        </svg>
-      </div>
-      <figcaption>The path the surname's likely homeland joined: out of the Peloponnese, across the Atlantic to New York, and onward into the American West. Map is schematic, not to scale.</figcaption>
+    <figure class="plate portrait">
+      <a class="zoom" href="https://commons.wikimedia.org/wiki/File:Greek_american_Migrant_-_late_19th--20th_century.jpg" target="_blank" rel="noopener"><span class="mat"><img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Greek_american_Migrant_-_late_19th--20th_century.jpg" alt="A sepia studio portrait of a Greek immigrant in traditional embroidered dress, late 19th to early 20th century." loading="lazy"></span></a>
+      <figcaption><span class="cap">A Greek emigrant of the great wave, in traditional dress, photographed around the turn of the twentieth century.</span><span class="credit">Late 19th–early 20th century · public domain, via Wikimedia Commons</span></figcaption>
     </figure>
   </div>
 </section>
@@ -449,7 +463,7 @@
   <div class="wrap">
     <span class="kicker">Sources &amp; Notes</span>
     <h2>The record behind the story</h2>
-    <p class="note">The etymology, the saint, the currant crisis, and the migration figures are well documented below. Two honest flags: the Peloponnese origin is a strong, evidence-based inference from the name's <em>form</em>, not a proven fact for this specific line; and several figures (the 421,000 arrivals, the railroad-labor share, the bankruptcy quote) are real but carry the caveats noted in the text.</p>
+    <p class="note">The etymology, the saint, the currant crisis, and the migration figures are well documented below. Two honest flags: the Peloponnese origin is a strong, evidence-based inference from the name's <em>form</em>, not a proven fact for this specific line; and several figures (the 421,000 arrivals, the railroad-labor share, the bankruptcy quote) are real but carry the caveats noted in the text. The period images are public-domain works of art, cartography, and photography sourced from Wikimedia Commons; each carries its own credit in the caption beneath it.</p>
     <ol>
       <li id="s1"><a href="https://www.behindthename.com/name/demetrios">Demetrios — Behind the Name</a>; and <a href="https://en.wiktionary.org/wiki/%CE%94%CE%B7%CE%BC%CE%AE%CF%84%CE%B7%CF%81">Δημήτηρ — Wiktionary</a>.</li>
       <li id="s2"><a href="https://ancestralfindings.com/the-origin-and-meaning-of-your-greek-surname/">The Origin and Meaning of Your Greek Surname — Ancestral Findings</a>.</li>
